@@ -6,6 +6,7 @@ import android.widget.FrameLayout
 import android.widget.TextView
 import androidx.core.text.HtmlCompat
 import androidx.core.view.isVisible
+import androidx.core.widget.TextViewCompat
 import java.util.*
 
 class PINCounterView: FrameLayout {
@@ -59,6 +60,12 @@ class PINCounterView: FrameLayout {
             sSecond = a.getString(R.styleable.PINCounterView_pinCounterSecond)
 
             a.recycle()
+        }
+    }
+
+    fun setTextStyle(style: Int) {
+        if (tvCounter != null) {
+            TextViewCompat.setTextAppearance(tvCounter!!, style)
         }
     }
 

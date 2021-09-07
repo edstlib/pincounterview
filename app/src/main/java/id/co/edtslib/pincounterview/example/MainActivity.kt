@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
 
         val pinCounterView = findViewById<PINCounterView>(R.id.pinCounterView)
+        pinCounterView.setTextStyle(R.style.TextAppearance_AppCompat_Body1)
         pinCounterView.delegate = object : PINCounterDelegate {
             override fun onExpired() {
                 Toast.makeText(this@MainActivity, "Hi, counter is expired", Toast.LENGTH_SHORT).show()

@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.appcompat.widget.AppCompatTextView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tvCounter"
+    android:gravity="center"
+    android:textSize="12sp"
+    android:textColor="#70727D"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <androidx.appcompat.widget.AppCompatTextView
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/tvCounter"
-        android:gravity="center"
-        android:textSize="14sp"
-        android:textColor="#70727D"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:layout_height="wrap_content" />
