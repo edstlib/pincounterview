@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PINCounterView">
+        <attr name="pinCounterInterval" format="integer" />
+        <attr name="pinCounterText" format="string" />
+        <attr name="pinCounterFormat" format="enum">
+            <enum name="clock" value="0"/>
+            <enum name="text" value="1"/>
+        </attr>
+        <attr name="pinCounterHour" format="string" />
+        <attr name="pinCounterMinute" format="string" />
+        <attr name="pinCounterSecond" format="string" />
+
+    </declare-styleable>
+</resources>
