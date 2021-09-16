@@ -75,13 +75,16 @@ class PINCounterView: FrameLayout {
         reset()
     }
 
-    fun stop() {
+    private fun stop() {
         if (runnable != null) {
             tvCounter?.removeCallbacks(runnable)
             runnable = null
         }
-        tvCounter?.isVisible = false
+    }
 
+    fun expired() {
+        stop()
+        tvCounter?.isVisible = false
     }
 
     fun reset() {
