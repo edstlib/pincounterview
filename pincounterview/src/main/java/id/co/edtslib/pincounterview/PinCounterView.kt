@@ -70,6 +70,7 @@ class PINCounterView: FrameLayout {
     }
 
     fun start() {
+        tvCounter?.isVisible = false
         startTime = Date().time
         reset()
     }
